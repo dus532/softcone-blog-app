@@ -1,8 +1,10 @@
+import ReactQueryProvider from '@/components/providers/ReactQueryProvider';
 import './globals.css';
 import XStyledProvider from '@/components/providers/XStyledProvider';
+import { TITLE } from '@/constants/meta';
 
 export const metadata = {
-  title: 'workshop by SOFTCONE : 소프트콘 공작소',
+  title: `workshop by SOFTCONE : ${TITLE}`,
   description: '소프트콘의 자유로운 공작소',
 };
 
@@ -14,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <XStyledProvider>{children}</XStyledProvider>
+        <XStyledProvider>
+          <ReactQueryProvider>{children}</ReactQueryProvider>
+        </XStyledProvider>
       </body>
     </html>
   );
