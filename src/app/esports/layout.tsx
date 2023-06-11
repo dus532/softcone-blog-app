@@ -6,6 +6,6 @@ export const metadata = {
   description: '소프트콘 이스포츠',
 };
 
-export default function layout({ children }: { children: React.ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return <Container>{children}</Container>;
 }

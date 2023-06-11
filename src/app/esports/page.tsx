@@ -1,3 +1,3 @@
-export default function layout() {
-  return <div></div>;
+export default function Page() {
+  return <>1</>;
 }

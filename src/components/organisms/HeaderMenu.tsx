@@ -27,7 +27,7 @@ function MenuItem({
   href?: string;
 }) {
   const pathname = usePathname();
-  const isSelected = !!(pathname === href);
+  const isSelected = !!(pathname?.indexOf(href) === 0);
 
   return (
     <div className={styles.Menu}>
