@@ -1,0 +1,41 @@
+.Header {
+  height: 80px;
+}
+
+.HeaderContainer {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid var(--surface-border);
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  width: 170px;
+  text-align: center;
+  font-family: 'neurimboGothic';
+  letter-spacing: -0.4px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: var(--surface-dim);
+    transition: 0.25s;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: 0.15s;
+  }
+}
+
+.Menu {
+  flex: 1;
+}
+
+.Right {
+  width: 170px;
+}

@@ -1,12 +1,32 @@
+@font-face {
+  font-family: 'neurimboGothic';
+  src: url('/assets/fonts/neurimbo-gothic-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: 'pretendard';
+  src: url('/assets/fonts/pretendard-variables.woff2') format('woff2');
+  display: swap;
+}
+
 :root {
   --surface: #171717;
+  --surface-border: #404040;
+  --surface-dim: #2b2b2b;
+
   --on-surface: #fff;
+
+  --esports-red: #f15252;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  line-height: 100%;
 }
 
 html,
@@ -15,7 +35,7 @@ body {
   overflow-x: hidden;
   background-color: var(--surface);
   color: var(--on-surface);
-  font-family: 'Pretendard', sans-serif;
+  font-family: 'pretendard', sans-serif;
 }
 
 a {
