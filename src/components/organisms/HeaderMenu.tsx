@@ -12,7 +12,7 @@ export default function HeaderMenu() {
       <MenuItem href='/esports'>
         E.<span className={styles.Red}>SPORTS</span>
       </MenuItem>
-      <MenuItem href='/plugin'>PLUG/IN</MenuItem>
+      <MenuItem href='/workshop'>WORKSHOP</MenuItem>
       <MenuItem href='/devblog'>DEV.BLOG</MenuItem>
     </div>
   );

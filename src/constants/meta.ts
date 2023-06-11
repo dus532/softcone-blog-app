@@ -1,1 +1,1 @@
-export const TITLE = '소프트콘 공작소';
+export const TITLE = '스튜디오 소프트콘';
