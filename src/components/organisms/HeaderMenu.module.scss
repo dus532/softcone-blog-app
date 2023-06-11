@@ -1,0 +1,50 @@
+.Menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.MenuItem {
+  font-family: 'neurimboGothic';
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: 0.25s;
+
+  &:hover {
+    background-color: var(--surface-dim);
+    transition: 0.25s;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: 0.15s;
+  }
+
+  .BorderBottom {
+    width: 20px;
+    height: 2px;
+    background-color: var(--surface-border);
+    transition: 0.25s;
+  }
+
+  .BorderBottomActive {
+    background-color: var(--on-surface);
+  }
+}
+
+.Active {
+  background-color: var(--surface-bright);
+  transition: 0.25s;
+}
+
+.Opcaity70 {
+  opacity: 0.7;
+  transition: 0.35s;
+}
