@@ -5,15 +5,16 @@ import styles from './HeaderMenu.module.scss';
 import Link from 'next/link';
 import cn from 'classnames';
 import { usePathname } from 'next/navigation';
+import { MENU } from '@/config/menu';
 
 export default function HeaderMenu() {
   return (
     <div className={styles.Menu}>
-      <MenuItem href='/esports'>
-        E.<span className={styles.Red}>SPORTS</span>
-      </MenuItem>
-      <MenuItem href='/workshop'>WORKSHOP</MenuItem>
-      <MenuItem href='/devblog'>DEV.BLOG</MenuItem>
+      {MENU.map((item) => (
+        <MenuItem href={item.href} key={item.href}>
+          {item.children}
+        </MenuItem>
+      ))}
     </div>
   );
 }

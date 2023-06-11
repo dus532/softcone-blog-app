@@ -31,15 +31,12 @@
     width: 20px;
     height: 2px;
     background-color: var(--surface-border);
+    transition: 0.25s;
   }
 
   .BorderBottomActive {
     background-color: var(--on-surface);
   }
-}
-
-.Red {
-  color: var(--esports-red);
 }
 
 .Opcaity70 {
