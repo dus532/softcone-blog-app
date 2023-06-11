@@ -39,6 +39,11 @@
   }
 }
 
+.Active {
+  background-color: var(--surface-bright);
+  transition: 0.25s;
+}
+
 .Opcaity70 {
   opacity: 0.7;
   transition: 0.35s;

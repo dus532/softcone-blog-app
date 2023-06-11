@@ -32,10 +32,8 @@ function MenuItem({
   return (
     <div className={styles.Menu}>
       <Link href={href}>
-        <div className={cn(styles.MenuItem)}>
-          <div className={cn({ [styles.Opcaity70]: !isSelected })}>
-            {children}
-          </div>
+        <div className={cn(styles.MenuItem, { [styles.Active]: isSelected })}>
+          <div>{children}</div>
           <div
             className={cn(styles.BorderBottom, {
               [styles.BorderBottomActive]: isSelected,
