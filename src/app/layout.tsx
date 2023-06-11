@@ -1,7 +1,26 @@
 import ReactQueryProvider from '@/components/providers/ReactQueryProvider';
-import './globals.css';
-import XStyledProvider from '@/components/providers/XStyledProvider';
+import './globals.scss';
 import { TITLE } from '@/constants/meta';
+import Header from '@/components/organisms/Header';
+import localFont from 'next/font/local';
+
+const neurimboGothic = localFont({
+  src: [
+    {
+      path: '../assets/fonts/neurimbo-gothic-regular.woff',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+});
+
+const Pretendard = localFont({
+  src: [
+    {
+      path: '../assets/fonts/pretendard-variables.woff2',
+    },
+  ],
+});
 
 export const metadata = {
   title: `workshop by SOFTCONE : ${TITLE}`,
@@ -14,11 +33,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html
+      lang='en'
+      className={`${neurimboGothic.className} ${Pretendard.className}`}
+    >
       <body>
-        <XStyledProvider>
-          <ReactQueryProvider>{children}</ReactQueryProvider>
-        </XStyledProvider>
+        <ReactQueryProvider>
+          <Header />
+          {children}
+        </ReactQueryProvider>
       </body>
     </html>
   );

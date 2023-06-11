@@ -1,3 +1,8 @@
+:root {
+  --surface: #171717;
+  --on-surface: #fff;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,6 +13,9 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: var(--surface);
+  color: var(--on-surface);
+  font-family: 'Pretendard', sans-serif;
 }
 
 a {
