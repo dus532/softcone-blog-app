@@ -1,0 +1,13 @@
+.Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: calc(100vh / 2 - 250px);
+  text-align: center;
+
+  p {
+    font-weight: 400;
+    color: var(--on-surface-variant);
+    opacity: 0.9;
+  }
+}

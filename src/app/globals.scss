@@ -13,16 +13,21 @@
 }
 
 :root {
-  --surface: #171717;
-  --surface-bright: #252525;
-  --surface-dim: #333;
-  --surface-border: #404040;
+  --surface: #151515;
+  --surface-bright: #262626;
+  --surface-dim: #313131;
+  --surface-border: #343434;
 
   --on-surface: #fff;
   --on-surface-variant: #ddd;
 
-  // white
-  @media (prefers-color-scheme: light) {
+  --esports-red: #f15252;
+  --workshop-blue: #516add;
+  --workshop-blue-container: #7785cb;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
     --surface: #fff;
     --surface-bright: #f1f1f1;
     --surface-dim: #e4e4e4;
@@ -31,8 +36,6 @@
     --on-surface: #000;
     --on-surface-variant: #333;
   }
-
-  --esports-red: #f15252;
 }
 
 * {
@@ -50,6 +53,10 @@ body {
   color: var(--on-surface);
   font-family: 'pretendard', sans-serif;
   font-size: 16px;
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -63,36 +70,40 @@ h3,
 h4,
 h5,
 h6 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+
   line-height: 100%;
   margin: 0;
   padding: 0;
 }
 
 p {
-  font-size: 1rem; // 16px
+  font-size: 1rem;
   line-height: 150%;
 }
 
 h1 {
-  font-size: 4.5rem; // 72px
+  font-size: 3.8rem;
 }
 
 h2 {
-  font-size: 2.25rem; // 36px
+  font-size: 2.25rem;
 }
 
 h3 {
-  font-size: 1.5rem; // 24px
+  font-size: 1.5rem;
 }
 
 h4 {
-  font-size: 1.25rem; // 20px
+  font-size: 1.25rem;
 }
 
 h5 {
-  font-size: 1rem; // 16px
+  font-size: 1rem;
 }
 
 h6 {
-  font-size: 0.9rem; // 14px
+  font-size: 0.9rem;
 }

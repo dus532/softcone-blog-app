@@ -16,7 +16,11 @@ export const MENU: Menu[] = [
   },
   {
     href: '/workshop',
-    children: 'WORKSHOP',
+    children: (
+      <>
+        <span className={styles.Blue}>WORK</span>SHOP
+      </>
+    ),
   },
   {
     href: '/devblog',

@@ -10,9 +10,6 @@ const nextConfig = {
 
     return config;
   },
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'styles')],
-  },
 };
 
 module.exports = nextConfig;

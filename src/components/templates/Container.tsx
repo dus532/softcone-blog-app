@@ -5,5 +5,5 @@ export default function Container({
 }: {
   children?: React.ReactNode;
 }) {
-  return <main className={styles.container}>{children}</main>;
+  return <div className={styles.container}>{children}</div>;
 }
