@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p style="text-align: center">
+<img src="./public/readme_logo.png" width="500" />
+</p>
 
-## Getting Started
+# SOFTC.ONE 블로그 프론트엔드
 
-First, run the development server:
+next.js로 제작된 SOFTCONE 블로그 입니다. 이 프로젝트는 nextjs 13 `App Router` 으로 제작되어 있습니다. 이 프로젝트는 vercel을 이용하여 배포가 진행됩니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+> dev : https://dev.softc.one <br/>
+> prod : https://softc.one
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br/>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⌨️ 스택
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `Typescript`
+- `React`
+- `next.js 13 / App Router`
+- `SCSS Module`
 
-## Learn More
+<br/>
 
-To learn more about Next.js, take a look at the following resources:
+## 📝 배포
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `main` 브랜치에 푸시 후 `vercel`에서 자동으로 `dev`로 배포가 진행됩니다.
+- `prod` 브랜치에 푸시 후 `vercel`에서 자동으로 `prod`로 배포가 진행됩니다.
