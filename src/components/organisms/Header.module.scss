@@ -32,6 +32,18 @@
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  .LogoLight {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .LogoDark {
+    display: none;
+  }
+}
+
 .Menu {
   flex: 1;
 }

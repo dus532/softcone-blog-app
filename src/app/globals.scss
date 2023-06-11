@@ -14,15 +14,25 @@
 
 :root {
   --surface: #171717;
+  --surface-bright: #252525;
+  --surface-dim: #333;
   --surface-border: #404040;
-  --surface-dim: #2b2b2b;
-  --surface-bright: #1f1f1f;
 
   --on-surface: #fff;
   --on-surface-variant: #ddd;
 
+  // white
+  @media (prefers-color-scheme: light) {
+    --surface: #fff;
+    --surface-bright: #f1f1f1;
+    --surface-dim: #e4e4e4;
+    --surface-border: #ebebeb;
+
+    --on-surface: #000;
+    --on-surface-variant: #333;
+  }
+
   --esports-red: #f15252;
-  --exports-red-container: #220404;
 }
 
 * {
