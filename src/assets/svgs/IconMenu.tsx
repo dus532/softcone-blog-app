@@ -1,10 +1,14 @@
 import React from 'react';
 
-export default function IconMenu({ fill = 'var(--on-surface)' }) {
+export default function IconMenu({
+  w = 24,
+  h = 24,
+  fill = 'var(--on-surface)',
+}) {
   return (
     <svg
-      width='24'
-      height='24'
+      width={w}
+      height={h}
       viewBox='0 0 24 24'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
