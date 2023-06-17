@@ -1,7 +1,7 @@
 'use client';
 
 import Container from '@/components/templates/Container';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Header.module.scss';
 import LogoFullDark from '@/assets/svgs/LogoFullDark.svg';
 import IconMenu from '@/assets/svgs/IconMenu';
@@ -10,6 +10,8 @@ import Link from 'next/link';
 import HeaderMenu from '@/components/organisms/HeaderMenu';
 
 export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <header className={styles.Header}>
       <Container>
@@ -28,7 +30,7 @@ export default function Header() {
           <div className={styles.Right}></div>
           <div className={styles.MobileRight}>
             <div className={styles.MobileMenu}>
-              <IconMenu />
+              <IconMenu w={20} h={20} />
             </div>
           </div>
         </div>
