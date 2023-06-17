@@ -11,7 +11,7 @@
 }
 
 .Logo {
-  width: 170px;
+  width: 152px;
   text-align: center;
   font-family: 'neurimboGothic';
   letter-spacing: -0.4px;
@@ -20,6 +20,7 @@
   align-items: center;
   border-radius: 8px;
   transition: 0.25s;
+  padding: 0 20px;
 
   &:hover {
     background-color: var(--surface-dim);
@@ -49,5 +50,39 @@
 }
 
 .Right {
-  width: 170px;
+  width: 152px;
+}
+
+.MobileRight {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .HeaderContainer {
+    height: 60px;
+    padding: 8px 0;
+    justify-content: space-between;
+  }
+
+  .Menu {
+    display: none;
+  }
+
+  .Logo {
+    width: auto;
+    height: 100%;
+    padding: 0;
+
+    svg {
+      transform: scale(0.8);
+    }
+  }
+
+  .Right {
+    display: none;
+  }
+  .MobileRight {
+    display: block;
+    padding: 0 12px;
+  }
 }
