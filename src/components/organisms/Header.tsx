@@ -1,17 +1,18 @@
 'use client';
 
 import Container from '@/components/templates/Container';
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Header.module.scss';
 import LogoFullDark from '@/assets/svgs/LogoFullDark.svg';
 import IconMenu from '@/assets/svgs/IconMenu';
 import LogoFullLight from '@/assets/svgs/LogoFullLight.svg';
 import Link from 'next/link';
 import HeaderMenu from '@/components/organisms/HeaderMenu';
-import MobileMenu from '@/components/organisms/MobileMenu';
+import { useMobileMenu } from '@/states/mobileMenu';
+import IconX from '@/assets/svgs/IconX';
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { toggle, state } = useMobileMenu();
 
   return (
     <header className={styles.Header}>
@@ -30,13 +31,12 @@ export default function Header() {
           </div>
           <div className={styles.Right}></div>
           <div className={styles.MobileRight}>
-            <div className={styles.MobileMenu}>
-              <IconMenu w={20} h={20} />
-            </div>
+            <button className={styles.MobileMenu} onClick={toggle}>
+              {state ? <IconX w={20} h={20} /> : <IconMenu w={20} h={20} />}
+            </button>
           </div>
         </div>
       </Container>
-      <MobileMenu />
     </header>
   );
 }

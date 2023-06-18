@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @font-face {
   font-family: 'neurimboGothic';
   src: url('/assets/fonts/neurimbo-gothic-regular.woff') format('woff');
@@ -17,6 +19,7 @@
   --surface-bright: #262626;
   --surface-dim: #313131;
   --surface-border: #343434;
+  --surface-alpha80: #151515cc;
 
   --on-surface: #fff;
   --on-surface-variant: #ddd;
@@ -32,6 +35,7 @@
     --surface-bright: #f1f1f1;
     --surface-dim: #e4e4e4;
     --surface-border: #ebebeb;
+    --surface-alpha80: #ffffffcc;
 
     --on-surface: #000;
     --on-surface-variant: #333;
@@ -50,13 +54,14 @@
 html,
 body {
   max-width: 100vw;
+  min-height: auto;
   overflow-x: hidden;
   background-color: var(--surface);
   color: var(--on-surface);
   font-family: 'pretendard', sans-serif;
   font-size: 16px;
 
-  @media (max-width: 1200px) {
+  @media (max-width: $breakpoint-tablet) {
     font-size: 14px;
   }
 }
@@ -109,4 +114,15 @@ h5 {
 
 h6 {
   font-size: 0.9rem;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
 }
