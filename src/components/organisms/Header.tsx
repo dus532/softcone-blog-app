@@ -8,6 +8,7 @@ import IconMenu from '@/assets/svgs/IconMenu';
 import LogoFullLight from '@/assets/svgs/LogoFullLight.svg';
 import Link from 'next/link';
 import HeaderMenu from '@/components/organisms/HeaderMenu';
+import MobileMenu from '@/components/organisms/MobileMenu';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,6 +36,7 @@ export default function Header() {
           </div>
         </div>
       </Container>
+      <MobileMenu />
     </header>
   );
 }
