@@ -3,6 +3,8 @@ import './globals.scss';
 import { TITLE } from '@/constants/meta';
 import Header from '@/components/organisms/Header';
 import Script from 'next/script';
+import MobileMenu from '@/components/organisms/MobileMenu';
+import RecoilProvider from '@/components/providers/RecoilProvider';
 
 export const metadata = {
   title: `STUDIO SOFTCONE : ${TITLE}`,
@@ -32,10 +34,13 @@ export default function RootLayout({
         </>
       ) : null}
       <body>
-        <ReactQueryProvider>
-          <Header />
-          {children}
-        </ReactQueryProvider>
+        <RecoilProvider>
+          <ReactQueryProvider>
+            <Header />
+            {children}
+            <MobileMenu />
+          </ReactQueryProvider>
+        </RecoilProvider>
       </body>
     </html>
   );

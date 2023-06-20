@@ -9,13 +9,13 @@ import { MENU } from '@/config/menu';
 
 export default function HeaderMenu() {
   return (
-    <div className={styles.Menu}>
+    <nav className={styles.Menu}>
       {MENU.map((item) => (
         <MenuItem href={item.href} key={item.href}>
           {item.children}
         </MenuItem>
       ))}
-    </div>
+    </nav>
   );
 }
 

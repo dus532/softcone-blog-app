@@ -1,7 +1,16 @@
+@use '@/app/variables.scss' as *;
+
 .container {
   max-width: 1240px;
-  height: 100%;
+  height: auto;
   margin: 0 auto;
   position: relative;
   padding: 0 20px;
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .container {
+    height: 100%;
+    padding: 0 16px;
+  }
 }

@@ -1,0 +1,57 @@
+@use '@/app/variables.scss' as *;
+
+.Container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .Container {
+    padding: 2rem;
+    display: block;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow-y: auto;
+    backdrop-filter: blur(40px);
+    opacity: 0;
+    animation: opacity 0.25s forwards;
+    background: var(--surface-alpha80);
+  }
+}
+
+.Menu {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.MenuItem {
+  width: 100%;
+  font-family: 'neurimboGothic';
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--surface-border);
+
+  &:active {
+    transform: scale(0.95);
+    transition: 0.15s;
+  }
+}
+
+.MenuItem__Active {
+  border-bottom: 2px solid var(--on-surface);
+}
