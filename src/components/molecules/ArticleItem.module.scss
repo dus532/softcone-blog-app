@@ -1,20 +1,25 @@
 @use '@/app/variables.scss' as *;
 
 .Item {
+  display: flex;
+  max-width: 588px;
+  gap: 12px;
   width: 100%;
-  flex: 1;
 }
 
 .IMG {
   object-fit: cover;
-  width: 100%;
-  height: 50vw;
-  max-width: 588px;
-  max-height: 588px;
+  width: 25vw;
+  height: 25vw;
+  max-width: 305px;
+  max-height: 305px;
+}
+
+.Summary {
+  flex: 1;
 }
 
 .Category {
-  margin-top: 20px;
   font-weight: 600;
   color: var(--on-surface-variant2);
 }
@@ -29,10 +34,12 @@
   color: var(--on-surface-variant2);
 }
 
-@media (max-width: $breakpoint-tablet) {
-}
-
 @media (max-width: $breakpoint-mobile) {
+  .Item {
+    max-width: none;
+    flex-direction: column;
+  }
+
   .IMG {
     max-width: none;
     max-height: none;
