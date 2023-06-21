@@ -1,0 +1,20 @@
+.IMG {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.Category {
+  margin-top: 20px;
+  font-weight: 600;
+  color: var(--on-surface-variant2);
+}
+.Title {
+  margin-top: 4px;
+  font-weight: 700;
+}
+
+.Description {
+  margin-top: 8px;
+  font-weight: 500;
+  color: var(--on-surface-variant2);
+}
